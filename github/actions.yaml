@@ -1,0 +1,9 @@
+name: Test Runner for custom runner
+on: push
+
+job:
+  init:
+    runs-on: self-hosted
+    steps:
+      - run: echo 'Hello Bobo'
+      - run: echo $HOSTNAME
